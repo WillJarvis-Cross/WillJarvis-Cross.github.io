@@ -75,6 +75,8 @@
   cursor: pointer;
   font-family: "Calisto-MT";}
 
+.tabs {}
+
 .main-navigation {
   color: #fff;
   display: none;
