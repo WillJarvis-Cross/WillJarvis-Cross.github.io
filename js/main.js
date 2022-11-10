@@ -76,8 +76,24 @@ $(window).scroll(function(e){
 });
 
 function switchTabs(evt, tab) {
+	const tabcontent = document.getElementsByClassName("tabs");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+
+	document.getElementById(tab).style.display = "block";
+
+	document.getElementsByClassName("main-navigation").style.display = "none";
+	document.getElementById('myBtn').style.display = "none";
+
+		/*if($('#myBtn').hasClass('change')) {
+			$('body').addClass('stop-scroll');
+		} else {
+			$('body').removeClass('stop-scroll');
+		}*/
+
 	// Declare all variables
-	var i, tabcontent, tablinks;
+	/*var i, tabcontent, tablinks;
 
 	// Get all elements with class="tabcontent" and hide them
 	tabcontent = document.getElementsByClassName("tabs");
@@ -85,7 +101,6 @@ function switchTabs(evt, tab) {
 	  tabcontent[i].style.display = "none";
 	}
   
-	// Get all elements with class="tablinks" and remove the class "active"
 	tablinks = document.getElementsByClassName("button-style");
 	for (i = 0; i < tablinks.length; i++) {
 	  tablinks[i].className = tablinks[i].className.replace(" active", "");
@@ -97,5 +112,5 @@ function switchTabs(evt, tab) {
 	$('.main-navigation').toggle('slow');
 	//$('.bar1').toggle('slow');
 	var element = document.getElementById("myBtn");
-  	element.classList.toggle("change");
+  	element.classList.toggle("change");*/
 }
