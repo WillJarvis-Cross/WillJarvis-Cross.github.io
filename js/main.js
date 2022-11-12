@@ -83,8 +83,6 @@ function switchTabs(evt, tab) {
 
 	document.getElementById(tab).style.display = "block";
 
-	document.getElementsByClassName("main-navigation").style.display = "none";
-	document.getElementById('myBtn').style.display = "none";
 
 		/*if($('#myBtn').hasClass('change')) {
 			$('body').addClass('stop-scroll');
