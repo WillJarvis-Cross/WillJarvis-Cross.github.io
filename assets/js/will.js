@@ -41,6 +41,10 @@ $(window).on("load", function() {
     });
 });
 
+function detectMobile() {
+  return ".mobile"
+  return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+}
 
 // google maps
 function initMap() {

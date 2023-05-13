@@ -11670,3 +11670,9 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 750px) {
+  .header {
+    background-size: 280% 100%;
+  }
+}
