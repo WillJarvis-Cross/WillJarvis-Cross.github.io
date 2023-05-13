@@ -11671,8 +11671,17 @@ pre .code {
   margin-top: 10px;
 }
 
+.youtubeLink {
+  width: 763px;
+  height: 572px;
+}
+
 @media screen and (max-width: 750px) {
   .header {
-    background-size: 280% 100%;
+    padding-left: 50%;
+  }
+  .youtubeLink {
+    width: 381px;
+    height: 286px;
   }
 }
