@@ -11664,7 +11664,6 @@ pre .code {
   .header {
     height: 500px;
     min-height: 500px;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/headerMobile.jpg);
   }
   .header .social-icons {
     margin: auto;
