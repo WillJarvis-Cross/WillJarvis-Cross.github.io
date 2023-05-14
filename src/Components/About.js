@@ -10,8 +10,7 @@ class About extends Component {
     const bio = <p>Hi! I am a fourth year undergraduate student at the University of Toronto, and I am completing a double major in <em>computer science</em> and <em>astronomy and astrophysics</em> as well as a minor in <em>mathematics</em>. Currently I work for Super (previously Snapcommerce), a commerce company dedicated to cater towards those left behind by credit companies. Outside of my studies, I enjoy learning about the intricacies of our Universe and staying physically active by playing various sports with friends.</p>;
     const street = this.props.data.address.street;
     const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
+    const province = this.props.data.address.province;
     const phone = this.props.data.phone;
     const email = this.props.data.email;
 
@@ -39,7 +38,7 @@ class About extends Component {
                     <span>
                       {street}
                       <br />
-                      {city} {state}, {zip}
+                      {city}, {province}
                     </span>
                     <br />
                     <span>{phone}</span>

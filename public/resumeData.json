@@ -7,36 +7,23 @@
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "wjarviscross@gmail.com",
     "phone": "226-260-5073",
+    "github": "https://github.com/WillJarvis-Cross",
+    "linkedin": "https://www.linkedin.com/in/williamjarviscross-1378361b6/",
     "address":{
-      "street":"Madison",
+      "street":"Madison Avenue",
       "city":"Toronto",
       "province":"Ontario"
     },
     "website": "https://willjarvis-cross.github.io/",
     "social":[
       {
-        "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
-        "className":"fa fa-facebook"
-      },
-      {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://www.linkedin.com/in/williamjarviscross-1378361b6/",
         "className":"fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
-        "className":"fa fa-instagram"
-      },
-      {
         "name":"github",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://github.com/WillJarvis-Cross",
         "className":"fa fa-github"
       }
     ]
@@ -45,30 +32,26 @@
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2017",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      },
-      {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2013",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"University of Toronto",
+        "degree":"Honours Bachelor of Science",
+        "graduated":"April 2024",
+        "description":"Graduating in 2024 with a double major in Computer Science and Astronomy and Astrophysics as well as a minor in Mathematics."
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2018 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Super (previously Snapcommerce)",
+        "link": "https://www.super.com/",
+        "title":"Software Engineering Intern",
+        "years":"May 2022 - Aug 2023",
+        "description":"Developed features for new and current products along with conducted experiments to efficiently improve the business. Used JavaScript React, Node.js and Python."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Geopogo",
+        "link": "https://www.geopogoar.com/",
+        "title":"Software Engineering Intern",
+        "years":"Apr 2021 - Aug 2021",
+        "description":"Heavily involved in designing software for Geopogo including augmented reality and general game features. Did front-end and back-end work mostly using Unity and C#."
       }
     ],
     "skills":[
