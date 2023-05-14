@@ -5,18 +5,14 @@
     "image":"avatar.jpg",
     "bio":"Hi! I am a fourth year undergraduate student at the University of Toronto, and I am completing a double major in <em>computer science</em> and <em>astronomy and astrophysics</em> as well as a minor in <em>mathematics</em>. Currently I work for Super (previously Snapcommerce), a commerce company dedicated to cater towards those left behind by credit companies. Outside of my studies, I enjoy learning about the intricacies of our Universe and staying physically active by playing various sports with friends.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
-    "github":"https://github.com/nordicgiant2/react-nice-resume",
-    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "email": "wjarviscross@gmail.com",
+    "phone": "226-260-5073",
     "address":{
-      "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "street":"Madison",
+      "city":"Toronto",
+      "province":"Ontario"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "https://willjarvis-cross.github.io/",
     "social":[
       {
         "name":"facebook",
