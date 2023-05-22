@@ -2,14 +2,11 @@ import React, { Component } from "react";
 import Fade from "react-reveal";
 
 let id = 0;
+
 class Portfolio extends Component {
-  state = {isOpen: false, currImg: 0}
-  add = (isOpen, imgIndex) => {
-    console.log(imgIndex)
-    this.setState({
-      isOpen: isOpen,
-      currImg: imgIndex ? imgIndex : this.state.currImg
-    })
+  constructor(props) {
+    super(props)
+    this.state = {isOpen: false, currImg: 0}
   }
 
   render() {
@@ -21,7 +18,7 @@ class Portfolio extends Component {
     return (
       <section id="portfolio">
         {this.state.isOpen && (
-          <div className="popup-modal" onClick={() => {this.add(false, undefined)}}>
+          <div className="popup-modal" onClick={() => {this.setState({isOpen: false, currImg: 0})}}>
             <i className="fa fa-4x pull-right close fa-times"></i>
             <div class="box-layout">
               <div class="dimension-label" aria-live="polite" aria-label="Current box width">
@@ -57,7 +54,7 @@ class Portfolio extends Component {
                 {projects.map((projects, i) => (
                   <div key={id++} className="columns portfolio-item">
                   <div className="item-wrap">
-                    <img src={"./images/portfolio/" + projects.image} alt={projects.title} onClick={() => {this.add(true, i)}} />
+                    <img src={"./images/portfolio/" + projects.image} alt={projects.title} onClick={() => {this.setState({isOpen: true, currImg: i})}} />
                     <div style={{ textAlign: "center" }}>{projects.title}</div>
                   </div>
                 </div>
