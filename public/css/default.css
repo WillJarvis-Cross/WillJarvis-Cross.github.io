@@ -294,6 +294,7 @@ hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 3
  }
  
  .box-layout {
+   margin: auto;
    display: grid;
    width: max-content;
    gap: 0.5rem;
@@ -764,6 +765,11 @@ properly.
    .row .offset-9    { margin-left: 0%; }
    .row .offset-10   { margin-left: 0%; }
    .row .offset-11   { margin-left: 0%; }
+
+   .youtubeLink {
+      width: 381px;
+      height: 286px;
+    }
 }
 
 /* mobile narrow
@@ -779,6 +785,10 @@ properly.
 @media screen and (min-width: 1200px) {
 
    .wide .row { max-width: 1180px; }
+   .youtubeLink {
+      width: 587px;
+      height: 440px;
+    }
 
 }
 
@@ -817,6 +827,20 @@ properly.
 	text-align: center !important;
 }
 
-
-
-
+/* The Close Button */
+.close {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+ }

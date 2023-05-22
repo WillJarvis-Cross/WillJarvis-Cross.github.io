@@ -68,6 +68,9 @@
 .pull-right {
   float: right;
 }
+.exit {
+  right:50%;
+}
 .pull-left {
   float: left;
 }
@@ -1335,4 +1338,7 @@
 }
 .fa-plus-square-o:before {
   content: "\f196";
+}
+.fa-solid-fa-xmark-fa-2xl:before {
+  content: "\f00d";
 }

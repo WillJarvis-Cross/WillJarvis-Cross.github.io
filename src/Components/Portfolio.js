@@ -4,10 +4,10 @@ import Fade from "react-reveal";
 let id = 0;
 class Portfolio extends Component {
   state = {isOpen: false, currImg: 0}
-  add = (imgIndex) => {
+  add = (isOpen, imgIndex) => {
     this.setState({
-      isOpen: true,
-      currImg: imgIndex ? imgIndex : 0
+      isOpen: isOpen,
+      currImg: imgIndex ? imgIndex : this.state.currImg
     })
   }
 
@@ -20,17 +20,18 @@ class Portfolio extends Component {
     return (
       <section id="portfolio">
         {this.state.isOpen && (
-          <div className="popup-modal">
+          <div className="popup-modal" onClick={() => {this.add(false, undefined)}}>
+            <i className="fa fa-4x exit fa-times"></i>
             <div class="box-layout">
               <div class="dimension-label" aria-live="polite" aria-label="Current box width">
                 <span data-element="width-label"></span>
               </div>
               <div></div>
               <figure class="box-demo box" data-element="parent-box">
-              <img src={"./images/portfolio/" + projects[this.state.currImg].image} alt={projects[this.state.currImg].title} />
+              {this.state.currImg === 0 ? (<iframe class="youtubeLink" src="https://www.youtube.com/embed/m7pxE1DswGo" title="Pokemon Game Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>) : 
+              (<img src={"./images/portfolio/" + projects[this.state.currImg].image} alt={projects[this.state.currImg].title} />)}
                 <figcaption contenteditable>
-                  You can edit this text to see how it changes the layout of our box,
-                  depending on intrinsic and extrinsic sizing.
+                  {projects[this.state.currImg].description}
                 </figcaption>
               </figure>
               <div class="dimension-label" aria-live="polite" aria-label="Current box height" data-orientation="vertical">
@@ -52,7 +53,7 @@ class Portfolio extends Component {
                 {projects.map((projects, i) => (
                   <div key={id++} className="columns portfolio-item">
                   <div className="item-wrap">
-                    <img src={"./images/portfolio/" + projects.image} alt={projects.title} onClick={() => {this.add(2)}} />
+                    <img src={"./images/portfolio/" + projects.image} alt={projects.title} onClick={() => {this.add(true, i)}} />
                     <div style={{ textAlign: "center" }}>{projects.title}</div>
                   </div>
                 </div>
