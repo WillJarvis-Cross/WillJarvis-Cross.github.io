@@ -5,6 +5,7 @@ let id = 0;
 class Portfolio extends Component {
   state = {isOpen: false, currImg: 0}
   add = (isOpen, imgIndex) => {
+    console.log(imgIndex)
     this.setState({
       isOpen: isOpen,
       currImg: imgIndex ? imgIndex : this.state.currImg
@@ -21,7 +22,7 @@ class Portfolio extends Component {
       <section id="portfolio">
         {this.state.isOpen && (
           <div className="popup-modal" onClick={() => {this.add(false, undefined)}}>
-            <i className="fa fa-4x exit fa-times"></i>
+            <i className="fa fa-4x pull-right close fa-times"></i>
             <div class="box-layout">
               <div class="dimension-label" aria-live="polite" aria-label="Current box width">
                 <span data-element="width-label"></span>
@@ -33,6 +34,9 @@ class Portfolio extends Component {
                 <figcaption contenteditable>
                   {projects[this.state.currImg].description}
                 </figcaption>
+                <a href={projects[this.state.currImg].github} rel="noreferrer" target="_blank">
+                  <i className="fa fa-3x fa-github"></i> Check it out!
+                </a>
               </figure>
               <div class="dimension-label" aria-live="polite" aria-label="Current box height" data-orientation="vertical">
                 <span data-element="height-label"></span>
