@@ -68,7 +68,7 @@ class Header extends Component {
             <Fade bottom duration={2000}>
               <ul className="social">
                 <a href={linkedin} rel="noreferrer" target="_blank" className="button btn project-btn">
-                  <i className="fa fa-book"></i>LinkedIn
+                  <i className="fa fa-linkedin-square"></i>LinkedIn
                 </a>
                 <a href={github} rel="noreferrer" target="_blank" className="button btn github-btn">
                   <i className="fa fa-github"></i>Github
