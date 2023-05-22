@@ -282,6 +282,26 @@ abbr:hover { cursor: help; }
 
 hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }
 
+.box-demo {
+   width: 600px;
+   height: 600px;
+   
+ }
+ 
+ .box-demo[data-sizing="intrinsic"] {
+   width: max-content;
+   height: max-content;
+ }
+ 
+ .box-layout {
+   margin: auto;
+   display: grid;
+   width: max-content;
+   gap: 0.5rem;
+   grid-template-columns: 1fr min-content;
+   margin-top: 5%;
+ }
+
 
 /*  3. Links  ------------------------------------------------------- */
 
@@ -746,6 +766,11 @@ properly.
    .row .offset-9    { margin-left: 0%; }
    .row .offset-10   { margin-left: 0%; }
    .row .offset-11   { margin-left: 0%; }
+
+   .youtubeLink {
+      width: 381px;
+      height: 286px;
+    }
 }
 
 /* mobile narrow
@@ -761,6 +786,10 @@ properly.
 @media screen and (min-width: 1200px) {
 
    .wide .row { max-width: 1180px; }
+   .youtubeLink {
+      width: 587px;
+      height: 440px;
+    }
 
 }
 
@@ -799,6 +828,20 @@ properly.
 	text-align: center !important;
 }
 
-
-
-
+/* The Close Button */
+.close {
+   position: absolute;
+   top: 60x;
+   right: 45px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+ }

@@ -76,27 +76,27 @@
     "projects": [
       {
         "title":"Pokemon Game",
-        "category":"My Travel Blog for my post-university travels",
+        "description":"This is my favourite personal project. This is a Pokemon game where the user can explore the world defeating randomly spawning pokemon or catching them to involve them in your team. Build up and train your team to prepare for the boss gyms.",
         "image":"Pokemon4.jpg",
-        "url":""
+        "github":"https://github.com/WillJarvis-Cross/Pokemon-Game"
       },
       {
         "title":"Infinity Dungeons",
-        "category":"",
+        "description":"Fun adventure game with many different dungeons to explore and defeat.",
         "image":"infinityDugeons.gif",
-        "url":""
+        "github":"https://github.com/WillJarvis-Cross/Infinity-Dungeon"
       },
       {
         "title":"Tron Heroes",
-        "category":"",
+        "description":"This is a 2 player game where the goal is to cut off your opponent while staying alive yourself.",
         "image":"Tron.gif",
-        "url":""
+        "github":"https://github.com/WillJarvis-Cross/TronHeroes"
       },
       {
         "title":"Sudoku Solver",
-        "category":"",
+        "description":"This is a simple python program that solves sudoku puzzles using a backtracking algorithm. Either input your own puzzle or use the random puzzle maker function.",
         "image":"sudokuExample.jpg",
-        "url":""
+        "github":"https://github.com/WillJarvis-Cross/sudoku"
       }
     ]
   }
