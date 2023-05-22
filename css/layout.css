@@ -491,8 +491,8 @@ ul#nav li.current a { color: #fe6928; }
 }
 .modal-content {
    border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+   cursor: pointer;
+   transition: 0.3s;
  }
 /* popup modal */
 .popup-modal {

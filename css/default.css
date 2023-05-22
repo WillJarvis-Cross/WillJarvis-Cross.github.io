@@ -845,3 +845,53 @@ properly.
    text-decoration: none;
    cursor: pointer;
  }
+
+ .popup-modal {
+   display: blocked; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.popup-modal .description-box { padding: 12px 36px 18px 36px; }
+.popup-modal .description-box h4 {
+   font: 15px/24px 'opensans-bold', sans-serif;
+	margin-bottom: 12px;
+   color: #111;
+}
+.popup-modal .description-box p {
+	font: 14px/24px 'opensans-regular', sans-serif;
+   color: #A1A1A1;
+   margin-bottom: 12px;
+}
+.popup-modal .description-box .categories {
+   font: 11px/21px 'opensans-light', sans-serif;
+   color: #A1A1A1;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   display: block;
+   text-align: left;
+}
+.popup-modal .description-box .categories i {
+   margin-right: 8px;
+}
+.popup-modal .link-box {
+   padding: 18px 36px;
+   background: #111;
+   text-align: left;
+}
+.popup-modal .link-box a {
+   color: #fff;
+	font: 11px/21px 'opensans-bold', sans-serif;
+	text-transform: uppercase;
+   letter-spacing: 3px;
+   cursor: pointer;
+}
+.popup-modal a:hover {	color: #00CCCC; }
+.popup-modal a.popup-modal-dismiss { margin-left: 24px; }
