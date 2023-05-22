@@ -987,8 +987,10 @@ footer .social-links li:first-child { margin-left: 0; }
    margin-right: 15px;
 }
 .project-btn{
-   background-color: #1abc9c !important;
+   background-color: #0762f9 !important;
+   border-radius: 16px;
 }
 .github-btn{
    background-color: #34495e !important;
+   border-radius: 16px;
 }
