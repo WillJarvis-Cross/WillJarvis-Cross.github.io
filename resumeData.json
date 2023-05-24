@@ -10,7 +10,6 @@
     "github": "https://github.com/WillJarvis-Cross",
     "linkedin": "https://www.linkedin.com/in/williamjarviscross-1378361b6/",
     "address":{
-      "street":"Madison Avenue",
       "city":"Toronto",
       "province":"Ontario"
     },
@@ -56,19 +55,27 @@
     "skills":[
       {
         "name":"Python",
-        "level":"60%"
+        "level":"70%"
       },
       {
         "name":"ReactJs",
-        "level":"50%"
+        "level":"70%"
       },
       {
-        "name":"CSS",
+        "name":"HTML & CSS",
         "level":"90%"
       },
       {
         "name":"JAVA",
-        "level":"80%"
+        "level":"60%"
+      },
+      {
+        "name": "C#",
+        "level": "50%"
+      },
+      {
+        "name": "SQL",
+        "level": "80%"
       }
     ]
   },
@@ -77,7 +84,7 @@
       {
         "title":"Pokemon Game",
         "description":"This is my favourite personal project. This is a Pokemon game where the user can explore the world defeating randomly spawning pokemon or catching them to involve them in your team. Build up and train your team to prepare for the boss gyms.",
-        "image":"Pokemon4.jpg",
+        "image":"Pokemon.gif",
         "github":"https://github.com/WillJarvis-Cross/Pokemon-Game"
       },
       {
