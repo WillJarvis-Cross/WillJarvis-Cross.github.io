@@ -54,7 +54,7 @@ class Portfolio extends Component {
                 {projects.map((projects, i) => (
                   <div key={id++} className="columns portfolio-item">
                   <div className="item-wrap">
-                    <img src={"./images/portfolio/" + projects.image} alt={projects.title} onClick={() => {this.setState({isOpen: true, currImg: i})}} />
+                    <img src={"./images/portfolio/" + projects.image} alt={projects.title} onClick={() => {window.screen.width >= 1280 && this.setState({isOpen: true, currImg: i})}} />
                     <div style={{ textAlign: "center" }}>{projects.title}</div>
                   </div>
                 </div>
