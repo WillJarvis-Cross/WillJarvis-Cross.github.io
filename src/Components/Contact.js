@@ -8,7 +8,7 @@ class Contact extends Component {
     const name = this.props.data.name;
     const city = this.props.data.address.city;
     const phone = this.props.data.phone;
-    const message = this.props.data.contactmessage;
+    const showEmailStuff = false
 
     return (
       <section id="contact">
@@ -21,12 +21,12 @@ class Contact extends Component {
             </div>
 
             <div className="ten columns">
-              <p className="lead">{message}</p>
+              <p className="lead">Please feel free to contact me through <a href="https://www.linkedin.com/in/williamjarviscross-1378361b6/" target="_blank" rel="noreferrer" >LinkedIn</a> or email at wjarviscross@gmail.com</p>
             </div>
           </div>
         </Fade>
 
-        <div className="row">
+        {showEmailStuff && <div className="row">
           <Slide left duration={1000}>
             <div className="eight columns">
               <form action="" method="post" id="contactForm" name="contactForm">
@@ -114,7 +114,7 @@ class Contact extends Component {
               </div>
             </aside>
           </Slide>
-        </div>
+        </div>}
       </section>
     );
   }
