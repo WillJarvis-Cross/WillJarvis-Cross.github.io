@@ -42,14 +42,14 @@
         "link": "https://www.super.com/",
         "title":"Software Engineering Intern",
         "years":"May 2022 - Aug 2023",
-        "description":"Developed features for new and current products along with conducted experiments to efficiently improve the business. Used JavaScript React, Node.js and Python."
+        "description":"Developed features for new and current products and conducted experiments to efficiently improve the business. Used JavaScript React, Node.js, Python, AWS, Twilio, and many other resources. Worked on back-end, front-end, and SEO. Added several new features to the product including a refund option for users."
       },
       {
         "company":"Geopogo",
         "link": "https://www.geopogoar.com/",
         "title":"Software Engineering Intern",
         "years":"Apr 2021 - Aug 2021",
-        "description":"Heavily involved in designing software for Geopogo including augmented reality and general game features. Did front-end and back-end work mostly using Unity and C#."
+        "description":"Heavily involved in designing software for Geopogo including augmented reality and general game features. Did front-end and back-end work using Unity and C# to create 3D models of cities and a way for the user to traverse the city virtually."
       }
     ],
     "skills":[
