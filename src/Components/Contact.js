@@ -21,7 +21,7 @@ class Contact extends Component {
             </div>
 
             <div className="ten columns">
-              <p className="lead">Please feel free to contact me through <a href="https://www.linkedin.com/in/williamjarviscross-1378361b6/" target="_blank" rel="noreferrer" >LinkedIn</a> or email at wjarviscross@gmail.com</p>
+              <p className="lead">Please feel free to contact me through <a href="https://www.linkedin.com/in/williamjarviscross-1378361b6/" target="_blank" rel="noreferrer" >LinkedIn</a> or email at <a href="mailto:wjarviscross@gmail.com">wjarviscross@gmail.com</a></p>
             </div>
           </div>
         </Fade>
