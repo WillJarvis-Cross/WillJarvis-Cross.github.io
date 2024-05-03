@@ -26,13 +26,13 @@ class Portfolio extends Component {
               </div>
               <div></div>
               <figure class="box-demo box" data-element="parent-box">
-              {this.state.currImg === 0 ? (<iframe class="youtubeLink" src="https://www.youtube.com/embed/m7pxE1DswGo" title="Pokemon Game Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>) : 
+              {this.state.currImg === 2 ? (<iframe class="youtubeLink" src="https://www.youtube.com/embed/m7pxE1DswGo" title="Pokemon Game Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>) : 
               (<img src={"./images/portfolio/" + projects[this.state.currImg].image} alt={projects[this.state.currImg].title} />)}
                 <figcaption contenteditable>
                   {projects[this.state.currImg].description}
                 </figcaption>
                 <a href={projects[this.state.currImg].github} rel="noreferrer" target="_blank">
-                  <i className="fa fa-3x fa-github"></i> Check it out!
+                  <i className={this.state.currImg < 2 ? "fa fa-3x fa-link" : "fa fa-3x fa-github"}></i> Check it out!
                 </a>
               </figure>
               <div class="dimension-label" aria-live="polite" aria-label="Current box height" data-orientation="vertical">
@@ -45,7 +45,7 @@ class Portfolio extends Component {
           <div className="row">
           
             <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Favourite Projects.</h1>
+              <h1>Check Out Some of My Favourite Projects (Click for description).</h1>
 
               <div
                 id="portfolio-wrapper"

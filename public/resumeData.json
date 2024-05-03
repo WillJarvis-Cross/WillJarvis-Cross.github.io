@@ -84,14 +84,14 @@
       {
         "title":"Superset Plugin",
         "description":"Partnered with UNICEF to create a plugin for their Superset application. It is a modern, enterprise-ready business intelligence web application which takes real-time population data and provides a user-friendly and interactive visualization.",
-        "image":"superset.gif",
-        "github":""
+        "image":"supersetgif.gif",
+        "github":"https://superset.apache.org/"
       },
       {
         "title":"MeetSphere",
         "description":"Picture effortlessly setting up personalized 1-on-1 meetups that fit snugly into your schedule. It's like having your own personal assistant for networking, but with a sprinkle of magic.",
         "image":"meetsphere.gif",
-        "github":""
+        "github":"https://meet.hydev.org/"
       },
       {
         "title":"Pokemon Game",
