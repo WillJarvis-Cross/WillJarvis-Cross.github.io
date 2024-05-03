@@ -253,19 +253,6 @@ ul#nav li.current a { color: #fe6928; }
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
-#resume .button {
-   margin-top: 6px;
-   background: #444;
-   color: #fff !important;
-}
-#resume .button:hover {
-   background: #fff;
-   color: #2B2B2B !important;
-}
-#resume .button i {
-   margin-right: 15px;
-   font-size: 20px;
-}
 
 /*----------------------------------------------*/
 /*	Skill Bars
