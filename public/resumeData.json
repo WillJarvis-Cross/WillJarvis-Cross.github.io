@@ -82,6 +82,18 @@
   "portfolio":{
     "projects": [
       {
+        "title":"Superset Plugin",
+        "description":"Partnered with UNICEF to create a plugin for their Superset application. It is a modern, enterprise-ready business intelligence web application which takes real-time population data and provides a user-friendly and interactive visualization.",
+        "image":"superset.gif",
+        "github":""
+      },
+      {
+        "title":"MeetSphere",
+        "description":"Picture effortlessly setting up personalized 1-on-1 meetups that fit snugly into your schedule. It's like having your own personal assistant for networking, but with a sprinkle of magic.",
+        "image":"meetsphere.gif",
+        "github":""
+      },
+      {
         "title":"Pokemon Game",
         "description":"This is my favourite personal project. This is a Pokemon game where the user can explore the world defeating randomly spawning pokemon or catching them to involve them in your team. Build up and train your team to prepare for the boss gyms.",
         "image":"Pokemon.gif",
