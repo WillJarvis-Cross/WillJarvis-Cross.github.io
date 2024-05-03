@@ -33,15 +33,15 @@
         "school":"University of Toronto",
         "degree":"Honours Bachelor of Science",
         "graduated":"April 2024",
-        "description":"Graduating in 2024 with a double major in Computer Science and Astronomy and Astrophysics as well as a minor in Mathematics."
+        "description":"Graduated with a major in Computer Science as well as a minors in Astrophysics and Mathematics."
       }
     ],
     "work":[
       {
         "company":"Super (previously Snapcommerce)",
         "link": "https://www.super.com/",
-        "title":"Software Engineering Intern",
-        "years":"May 2022 - Aug 2023",
+        "title":"Full Stack Software Engineering Intern",
+        "years":"May 2022 - Apr 2024",
         "description":"Developed features for new and current products and conducted experiments to efficiently improve the business. Used JavaScript React, Node.js, Python, AWS, Twilio, and many other resources. Worked on back-end, front-end, and SEO. Added several new features to the product including a refund option for users."
       },
       {
@@ -50,6 +50,13 @@
         "title":"Software Engineering Intern",
         "years":"Apr 2021 - Aug 2021",
         "description":"Heavily involved in designing software for Geopogo including augmented reality and general game features. Did front-end and back-end work using Unity and C# to create 3D models of cities and a way for the user to traverse the city virtually."
+      },
+      {
+        "company":"UNICEF Apache Superset",
+        "link": "https://superset.apache.org/",
+        "title":"Software Engineering Lead",
+        "years":"Sep 2023 - Dec 2023",
+        "description":"Project completed for UNICEF to build a plugin for Apache Superset which provides an interactive world map with population data that is updated dynamically."
       }
     ],
     "skills":[

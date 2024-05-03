@@ -7,7 +7,7 @@ class About extends Component {
 
     const name = this.props.data.name;
     const profilepic = "images/" + this.props.data.image;
-    const bio = <p>Hi! I am a fourth year undergraduate student at the University of Toronto, and I am completing a double major in <em>computer science</em> and <em>astronomy and astrophysics</em> as well as a minor in <em>mathematics</em>. Currently I work for Super (previously Snapcommerce), a commerce company dedicated to cater towards those left behind by credit companies. Outside of my studies, I enjoy learning about the intricacies of our Universe and staying physically active by playing various sports with friends.</p>;
+    const bio = <p>Hi! I recently graduated from the University of Toronto for computer science, and am currently looking for job opportunities. I also just concluded my 2-year job at Super.com (previously Snapcommerce), a commerce company dedicated to cater towards those left behind by credit companies. Outside of my studies, I enjoy learning about the intricacies of our Universe and staying physically active by playing various sports with friends.</p>;
     const city = this.props.data.address.city;
     const province = this.props.data.address.province;
     const phone = this.props.data.phone;
