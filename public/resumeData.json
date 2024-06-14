@@ -31,7 +31,7 @@
     "education":[
       {
         "school":"University of Toronto",
-        "degree":"Honours Bachelor of Science",
+        "degree":"Honours Bachelor of Science with High Distinction",
         "graduated":"April 2024",
         "description":"Graduated with a major in Computer Science as well as a minors in Astrophysics and Mathematics."
       }
@@ -57,6 +57,20 @@
         "title":"Software Engineering Lead",
         "years":"Sep 2023 - Dec 2023",
         "description":"Project completed for UNICEF to build a plugin for Apache Superset which provides an interactive world map with population data that is updated dynamically."
+      }
+    ],
+    "certifications":[
+      {
+        "certification":"AWS Certified Cloud Practitioner",
+        "image":"aws-certified-cloud-practitioner.png",
+        "link":"https://aws.amazon.com/verification",
+        "code":"9d5791e0b0194cfabfcbbf714246d7fb"
+      },
+      {
+        "certification":"In Progress - AWS Certified Solutions Architect - Associate",
+        "image":"Honours Bachelor of Science with High Distinction",
+        "link":"",
+        "code":""
       }
     ],
     "skills":[

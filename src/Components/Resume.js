@@ -39,6 +39,19 @@ class Resume extends Component {
       );
     });
 
+    const certifications = this.props.data.certifications.map(function (certifications) {
+      return (
+        <div key={certifications.certification}>
+          {certifications.link === "" ? <h3>{certifications.certification}</h3> : <><h3><a href={certifications.link} target="_blank" rel="noreferrer" color="#000000"><u>{certifications.certification}</u>
+            <img src="../images/aws-certified-cloud-practitioner.png" alt="Certification" style={{ marginLeft: "32px", verticalAlign: "middle" }} />
+          </a></h3>
+          <p>
+            Verification Code: {certifications.code}
+          </p></>}
+        </div>
+      );
+    });
+
     const skills = this.props.data.skills.map((skills) => {
       const backgroundColor = this.getRandomColor();
       const className = "bar-expand " + skills.name.toLowerCase();
@@ -79,6 +92,18 @@ class Resume extends Component {
             </div>
 
             <div className="nine columns main-col">{work}</div>
+          </div>
+        </Slide>
+
+        <Slide left duration={1300}>
+          <div className="row work">
+            <div className="three columns header-col">
+              <h1>
+                <span>Certifications</span>
+              </h1>
+            </div>
+
+            <div className="nine columns main-col">{certifications}</div>
           </div>
         </Slide>
 
