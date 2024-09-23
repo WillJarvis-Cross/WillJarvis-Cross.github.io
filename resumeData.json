@@ -38,11 +38,18 @@
     ],
     "work":[
       {
+        "company":"Parallel 42 Systems",
+        "link": "https://www.p42systems.com/",
+        "title":"Freelance AWS Cloud Engineer",
+        "years":"Aug 2024 - Sep 2024",
+        "description":"Transitioned the company’s deployment process for a web application from manual configurations to AWS Cloudfront and S3 using Terraform and Ansible to streamline the workflow and reduce deployment time by automating build, deployment, and hosting processes."
+      },
+      {
         "company":"Super (previously Snapcommerce)",
         "link": "https://www.super.com/",
         "title":"Full Stack Software Engineering Intern",
         "years":"May 2022 - Apr 2024",
-        "description":"Developed features for new and current products and conducted experiments to efficiently improve the business. Used JavaScript React, Node.js, Python, AWS, Twilio, and many other resources. Worked on back-end, front-end, and SEO. Added several new features to the product including a refund option for users."
+        "description":"Built an enhanced refund option, allowing users complete hotel refunds using 3rd party APIs and secure payments. Completely reworked our SMS system by using Twilio and Node.js to build a scalable messaging platform, saving the company thousands per month. Key contributor to the massive growth of this successful start-up. Go-to engineer/owner of the backend (Node) services. Led the process of company rebrand requiring massive effort for the front-end (TypeScript React) services."
       },
       {
         "company":"Geopogo",
@@ -97,6 +104,32 @@
       {
         "name": "SQL",
         "level": "80%"
+      }
+    ],
+    "moreSkills":[
+      {
+        "name":"AWS Development",
+        "level":"70%"
+      },
+      {
+        "name":"Terraform",
+        "level":"80%"
+      },
+      {
+        "name":"Node.JS",
+        "level":"70%"
+      },
+      {
+        "name":"Next.JS",
+        "level":"60%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "80%"
+      },
+      {
+        "name": "CI/CD",
+        "level": "50%"
       }
     ]
   },
