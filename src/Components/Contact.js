@@ -22,7 +22,7 @@ class Contact extends Component {
     e.preventDefault();
 
     const { name, email, message } = this.state;
-    console.log("Sending Email with the following data:", { name, email, message })
+    console.log("Sending Email with the following data:", { name, email, message });
 
     // Send email using EmailJS
     emailjs.send('service_veqgezf', 'template_z36zbqj', {
@@ -31,18 +31,29 @@ class Contact extends Component {
       message
     }, 'c3JY3KXQoyJde0vSQ')
     .then((response) => {
-      this.setState({ successMessage: "Your message was sent, thank you!", errorMessage: '' });
+      // Clear input fields and show success message
+      this.setState({ 
+        name: '', 
+        email: '', 
+        message: '', 
+        successMessage: "Your message was sent, thank you!", 
+        errorMessage: '' 
+      });
+      console.log("Email sent successfully!", response.status, response.text);
     })
     .catch((err) => {
       this.setState({ errorMessage: "Failed to send message, please try again.", successMessage: '' });
+      console.error("Failed to send email:", err);
     });
   };
 
   render() {
+    // Check for data prop
     if (!this.props.data) return null;
 
-    const { successMessage, errorMessage } = this.state;
-    const name = this.props.data.name;
+    // Destructure state
+    const { name, email, message, successMessage, errorMessage } = this.state;
+    const contactName = this.props.data.name;
     const city = this.props.data.address.city;
     const phone = this.props.data.phone;
 
@@ -72,17 +83,38 @@ class Contact extends Component {
                 <fieldset>
                   <div>
                     <label htmlFor="contactName">Name <span className="required">*</span></label>
-                    <input type="text" size="35" id="contactName" name="name" onChange={this.handleChange} />
+                    <input 
+                      type="text" 
+                      size="35" 
+                      id="contactName" 
+                      name="name" 
+                      value={name} // Controlled input
+                      onChange={this.handleChange} 
+                    />
                   </div>
 
                   <div>
                     <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                    <input type="text" size="35" id="contactEmail" name="email" onChange={this.handleChange} />
+                    <input 
+                      type="text" 
+                      size="35" 
+                      id="contactEmail" 
+                      name="email" 
+                      value={email} // Controlled input
+                      onChange={this.handleChange} 
+                    />
                   </div>
 
                   <div>
                     <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                    <textarea cols="50" rows="15" id="contactMessage" name="message" onChange={this.handleChange}></textarea>
+                    <textarea 
+                      cols="50" 
+                      rows="15" 
+                      id="contactMessage" 
+                      name="message" 
+                      value={message} // Controlled input
+                      onChange={this.handleChange}
+                    ></textarea>
                   </div>
 
                   <div>
@@ -92,8 +124,8 @@ class Contact extends Component {
                 </fieldset>
               </form>
 
-              {successMessage && <div id="message-success"><i className="fa fa-check"></i>{successMessage}<br /></div>}
-              {errorMessage && <div id="message-warning">{errorMessage}</div>}
+              {successMessage && <div>{successMessage}</div>}
+              {errorMessage && <div>{errorMessage}</div>}
             </div>
           </motion.div>
 
@@ -101,7 +133,7 @@ class Contact extends Component {
             <aside className="four columns footer-widgets">
               <div className="widget widget_contact">
                 <h4>Address and Phone</h4>
-                <p className="address">{name}<br />{city}, Canada<br /><span>{phone}</span></p>
+                <p className="address">{contactName}<br />{city}, Canada<br /><span>{phone}</span></p>
               </div>
             </aside>
           </motion.div>
