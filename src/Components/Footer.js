@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Fade from "react-reveal";
+import { motion } from 'framer-motion'
 
 class Footer extends Component {
   render() {
@@ -18,11 +18,14 @@ class Footer extends Component {
     return (
       <footer>
         <div className="row">
-          <Fade bottom>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
             <div className="twelve columns">
               <ul className="social-links">{networks}</ul>
             </div>
-          </Fade>
+          </motion.div>
 
           <div id="go-top">
             <a className="smoothscroll" title="Back to Top" href="#home">

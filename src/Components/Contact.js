@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Fade, Slide } from "react-reveal";
+import { motion } from 'framer-motion'
 
 class Contact extends Component {
   render() {
@@ -12,7 +12,11 @@ class Contact extends Component {
 
     return (
       <section id="contact">
-        <Fade bottom duration={1000}>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="row section-head">
             <div className="two columns header-col">
               <h1>
@@ -24,10 +28,14 @@ class Contact extends Component {
               <p className="lead">Please feel free to contact me through <a href="https://www.linkedin.com/in/williamjarviscross-1378361b6/" target="_blank" rel="noreferrer" >LinkedIn</a> or email at <a href="mailto:wjarviscross@gmail.com">wjarviscross@gmail.com</a></p>
             </div>
           </div>
-        </Fade>
+        </motion.div>
 
         {showEmailStuff && <div className="row">
-          <Slide left duration={1000}>
+          <motion.div
+            initial={{ x: -100 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+          >
             <div className="eight columns">
               <form action="" method="post" id="contactForm" name="contactForm">
                 <fieldset>
@@ -98,9 +106,13 @@ class Contact extends Component {
                 <br />
               </div>
             </div>
-          </Slide>
+          </motion.div>
 
-          <Slide right duration={1000}>
+          <motion.div
+            initial={{ x: -100 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+          >
             <aside className="four columns footer-widgets">
               <div className="widget widget_contact">
                 <h4>Address and Phone</h4>
@@ -113,7 +125,7 @@ class Contact extends Component {
                 </p>
               </div>
             </aside>
-          </Slide>
+          </motion.div>
         </div>}
       </section>
     );

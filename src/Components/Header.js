@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
-import Fade from "react-reveal";
+import { motion } from 'framer-motion'
 
 class Header extends Component {
   render() {
@@ -58,14 +58,25 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <Fade bottom>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+            >
               <h1 className="responsive-headline">{name}</h1>
-            </Fade>
-            <Fade bottom duration={1200}>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2 }}
+            >
               <h3>{description}.</h3>
-            </Fade>
+            </motion.div>
             <hr />
-            <Fade bottom duration={2000}>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2 }}
+            >
               <ul className="social">
                 <a href={linkedin} rel="noreferrer" target="_blank" className="button btn project-btn">
                   <i className="fa fa-linkedin-square"></i>LinkedIn
@@ -74,7 +85,7 @@ class Header extends Component {
                   <i className="fa fa-github"></i>Github
                 </a>
               </ul>
-            </Fade>
+            </motion.div>
           </div>
         </div>
 

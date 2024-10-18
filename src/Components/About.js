@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Fade from "react-reveal";
+import { motion } from 'framer-motion'
 
 class About extends Component {
   render() {
@@ -15,7 +15,11 @@ class About extends Component {
 
     return (
       <section id="about">
-        <Fade duration={1000}>
+        <motion.div
+          initial={{ opacity: 0, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="row">
             <div className="three columns">
               <img
@@ -53,7 +57,7 @@ class About extends Component {
               </div>
             </div>
           </div>
-        </Fade>
+        </motion.div>
       </section>
     );
   }

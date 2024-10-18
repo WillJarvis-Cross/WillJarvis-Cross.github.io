@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Fade from "react-reveal";
+import { motion } from 'framer-motion'
 
 let id = 0;
 
@@ -41,7 +41,11 @@ class Portfolio extends Component {
             </div>
           </div>
         )}
-        <Fade left duration={1000} distance="40px">
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="row">
           
             <div className="twelve columns collapsed">
@@ -63,7 +67,7 @@ class Portfolio extends Component {
               </div>
             </div>
           </div>
-        </Fade>
+        </motion.div>
       </section>
     );
   }
