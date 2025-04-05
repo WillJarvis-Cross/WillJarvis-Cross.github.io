@@ -38,6 +38,12 @@
     ],
     "work":[
       {
+        "company":"Optimize Wealth Management",
+        "link": "https://optimize.ca/",
+        "title":"Full Stack Web Developer",
+        "years":"Mar 2025 - Present",
+        "description":"Developed and maintained a financial management platform using TypeScript and React, enabling users to efficiently manage their finances. Integrated HubSpot to enhance customer relationship management and streamline user interactions."},
+      {
         "company":"Parallel 42 Systems",
         "link": "https://www.p42systems.com/",
         "title":"Freelance AWS Cloud Engineer",
