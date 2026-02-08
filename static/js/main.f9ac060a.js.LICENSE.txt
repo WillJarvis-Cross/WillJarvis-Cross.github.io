@@ -20,9 +20,9 @@
 */
 
 /*!
-* RAFManager v0.1.0
+* raf-manager v0.3.3
 *
-* Copyright 2018-2018, ajiemath <ajiemath@gmail.com>
+* Copyright 2018-2025, drawcall <co***@gmail.com>
 * Licensed under the MIT license
 * http://www.opensource.org/licenses/mit-license
 *
@@ -66,4 +66,26 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @remix-run/router v1.23.2
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * React Router v6.30.3
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
  */
