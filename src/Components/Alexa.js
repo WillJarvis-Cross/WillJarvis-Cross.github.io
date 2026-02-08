@@ -80,6 +80,66 @@ class Alexa extends Component {
     return description;
   };
 
+  // Custom descriptions for each photo - update these with your own descriptions!
+  getCustomDescriptions = () => {
+    return {
+      '6_month.JPG': '6 Month Photoshoot',
+      'big_smile.JPG': '',
+      'both_drawings.JPG': 'Sorry my drawing skills are not that good',
+      'christmas_drink.JPG': 'You look sooo good',
+      'christmas_market.JPG': 'Distillery District in the rain',
+      'drawing_of_alexa.JPG': 'Please forgive me',
+      'drawing_of_will.JPG': 'This is so good',
+      'first_pic.JPG': 'We were so young',
+      'halloween_costume.HEIC': 'Cute',
+      'halloween.JPG': '',
+      'holding_hands.JPG': '',
+      'hug.HEIC': '',
+      'nature_walk.JPG': 'I miss this weather. Also, this is a great picture.',
+      'olivia_party.JPG': '',
+      'pic.JPG': 'You Look Great.',
+      'pumpkins.JPG': '',
+      'roller_blade.HEIC': 'Surprised We Didn\'t Die',
+      'skating_prep.JPG': 'We need to go skating again',
+      'snow.HEIC': 'What an amazing Day',
+      'snowman_2.HEIC': 'We never named this snowman',
+      'snowman.HEIC': 'Cute',
+      'spadina_mirror.JPG': '',
+      'doku.JPG': 'Best Girlfriend Award',
+      'stand_mixer.JPG': 'Best Boyfriend Award'
+    };
+  };
+
+  // Custom dates for each photo - update these with your own dates!
+  getCustomDates = () => {
+    return {
+      '6_month.JPG': 'January 2026',
+      'big_smile.JPG': 'December 2025',
+      'both_drawings.JPG': 'January 2026',
+      'christmas_drink.JPG': 'December 2025',
+      'christmas_market.JPG': 'November 2025',
+      'drawing_of_alexa.JPG': 'January 2026',
+      'drawing_of_will.JPG': 'January 2026',
+      'first_pic.JPG': 'October 2025',
+      'halloween_costume.HEIC': 'October 2025',
+      'halloween.JPG': 'October 2025',
+      'holding_hands.JPG': 'November 2025',
+      'hug.HEIC': 'December 2025',
+      'nature_walk.JPG': 'October 2025',
+      'olivia_party.JPG': 'November 2025',
+      'pic.JPG': 'December 2025',
+      'pumpkins.JPG': 'October 2025',
+      'roller_blade.HEIC': 'January 2026',
+      'skating_prep.JPG': 'December 2025',
+      'snow.HEIC': 'January 2026',
+      'snowman_2.HEIC': 'January 2026',
+      'snowman.HEIC': 'January 2026',
+      'spadina_mirror.JPG': 'December 2025',
+      'doku.JPG': 'December 2025',
+      'stand_mixer.JPG': 'December 2025'
+    };
+  };
+
   render() {
     const { accepted } = this.state;
     const noButtonSize = this.getNoButtonSize();
@@ -103,7 +163,6 @@ class Alexa extends Component {
       'both_drawings.JPG',
       'christmas_drink.JPG',
       'christmas_market.JPG',
-      'doku.JPG',
       'drawing_of_alexa.JPG',
       'drawing_of_will.JPG',
       'first_pic.JPG',
@@ -121,15 +180,24 @@ class Alexa extends Component {
       'snowman_2.HEIC',
       'snowman.HEIC',
       'spadina_mirror.JPG',
+      'doku.JPG',
       'stand_mixer.JPG'
     ];
 
-    // Generate gallery photos with auto-generated descriptions
-    const galleryPhotos = allImageFiles.map(filename => ({
-      image: `/images/alexa/${filename}`,
-      description: this.generateDescriptionFromFilename(filename),
-      date: '' // You can update dates later
-    }));
+    // Get custom descriptions and dates
+    const customDescriptions = this.getCustomDescriptions();
+    const customDates = this.getCustomDates();
+    
+    // Generate gallery photos - use custom description/date if provided, otherwise auto-generate
+    const galleryPhotos = allImageFiles.map(filename => {
+      const customDesc = customDescriptions[filename];
+      const customDate = customDates[filename];
+      return {
+        image: `/images/alexa/${filename}`,
+        description: customDesc || this.generateDescriptionFromFilename(filename),
+        date: customDate || ''
+      };
+    });
 
     if (accepted) {
       return (
@@ -163,7 +231,7 @@ class Alexa extends Component {
           {/* Centered Celebration Section */}
           <div className="celebration-wrapper">
             <div className="alexa-content accepted">
-              <h1 className="celebration">🎉 Yay! 🎉</h1>
+              <h1 className="celebration">🎉 Will and Alexa's Best Moments 🎉</h1>
               <h2>You've made me the happiest person in the world!</h2>
               <div className="hearts-row">
                 <span className="heart-emoji">💕</span>
@@ -201,10 +269,6 @@ class Alexa extends Component {
           <div className="gallery-section">
             <div className="gallery-header">
               <h2 className="gallery-title">Our Beautiful Memories Together 💖</h2>
-              <p className="gallery-subtitle">Scroll down to see more of our special moments</p>
-              <div className="scroll-indicator">
-                <span>👇</span>
-              </div>
             </div>
             
             <div className="memories-gallery">
