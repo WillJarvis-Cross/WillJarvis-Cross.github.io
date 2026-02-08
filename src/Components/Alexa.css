@@ -469,8 +469,17 @@
   transition: transform 0.5s ease;
 }
 
+.memory-image-contain {
+  object-fit: contain !important;
+  background: white;
+}
+
 .memory-card:hover .memory-image {
   transform: scale(1.1);
+}
+
+.memory-card:hover .memory-image-contain {
+  transform: scale(1.05);
 }
 
 .memory-overlay {

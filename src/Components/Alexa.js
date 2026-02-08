@@ -140,6 +140,14 @@ class Alexa extends Component {
     };
   };
 
+  // Photos that should use contain instead of cover to avoid cropping heads
+  // Add filenames here for photos where heads get cut off
+  getPhotosToContain = () => {
+    return [
+      'pic.JPG', 'skating_prep.JPG', 'olivia_party.JPG', 'hug.HEIC'
+    ];
+  };
+
   render() {
     const { accepted } = this.state;
     const noButtonSize = this.getNoButtonSize();
@@ -187,15 +195,18 @@ class Alexa extends Component {
     // Get custom descriptions and dates
     const customDescriptions = this.getCustomDescriptions();
     const customDates = this.getCustomDates();
+    const photosToContain = this.getPhotosToContain();
     
     // Generate gallery photos - use custom description/date if provided, otherwise auto-generate
     const galleryPhotos = allImageFiles.map(filename => {
       const customDesc = customDescriptions[filename];
       const customDate = customDates[filename];
+      const useContain = photosToContain.includes(filename);
       return {
         image: `/images/alexa/${filename}`,
         description: customDesc || this.generateDescriptionFromFilename(filename),
-        date: customDate || ''
+        date: customDate || '',
+        useContain: useContain
       };
     });
 
@@ -278,7 +289,7 @@ class Alexa extends Component {
                     <img 
                       src={item.image} 
                       alt={item.description}
-                      className="memory-image"
+                      className={`memory-image ${item.useContain ? 'memory-image-contain' : ''}`}
                       onError={(e) => {
                         e.target.style.display = 'none';
                         e.target.parentElement.innerHTML = '<div class="image-placeholder">💕</div>';
