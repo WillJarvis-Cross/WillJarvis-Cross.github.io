@@ -47,11 +47,11 @@ class Alexa extends Component {
 
   getQuestion = () => {
     const { noCount } = this.state;
-    if (noCount === 0) return "Will you be my Valentine?";
+    if (noCount === 0) return `Hey Alexa, "will" you be my Valentine?`;
     if (noCount === 1) return "Please?";
     if (noCount === 2) return "Pretty please?";
     if (noCount === 3) return "Pretty please with a cherry on top?";
-    return "Will you be my Valentine?";
+    return "Just say yes";
   };
 
   generateDescriptionFromFilename = (filename) => {
@@ -242,7 +242,7 @@ class Alexa extends Component {
           {/* Centered Celebration Section */}
           <div className="celebration-wrapper">
             <div className="alexa-content accepted">
-              <h1 className="celebration">🎉 Will and Alexa's Best Moments 🎉</h1>
+              <h1 className="celebration">🎉 Will and Alexa's Best Moments (A&W) 🎉</h1>
               <h2>You've made me the happiest person in the world!</h2>
               <div className="hearts-row">
                 <span className="heart-emoji">💕</span>
